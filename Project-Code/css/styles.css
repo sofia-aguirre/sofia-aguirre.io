@@ -1,0 +1,403 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/bkg-placeholder.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: 'Quattrocento Sans', sans-serif;
+	text-transform: none;
+	color: #808283f3;
+} 
+
+h1, h2, h3 {
+    font-family: 'Prompt', sans-serif;
+	font-weight: 600;
+	color: #808283f3;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+a {
+	text-decoration: none;
+	color: #808283f3;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #b3b8bbf3;
+} 
+
+
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+	padding: 0;
+}
+
+li {
+	display: block;
+	text-align: left;
+}
+
+.skill-tree {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
+}
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 8px 0;
+}
+
+nav ul li {
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-container {
+	height: 100vmin;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.about-container, .testimonials-container {
+	height: 94vmin;
+	text-align: center;
+	padding-top: 8vmin;
+}
+
+.about-content-container {
+	height: 70vmin;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: left;
+	margin: 5% 60px;
+}
+
+.projects-container {
+	max-height: 94vmin;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 60px auto 0 auto ;
+}
+
+.projects-content-container {
+	height: 68vmin;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.project-text-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+
+.testimonials-content-container {
+	height: 70vmin;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	margin: 5% 60px;
+}
+
+.contact-container {
+	height: 94vmin;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#followtext {
+	margin-top: 10px;
+	padding: 0;
+}
+
+.sm-content-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sm-content-container h2 {
+	margin-top: 10px;
+	padding: 0;
+}
+
+.sm-content-container p {
+	padding-right: 15px;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+/* ----------------------------------------
+Sticky Nav Bar w/ Smooth Scroll
+------------------------------------------- */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + main {
+	padding-top: 60px;
+}
+
+.underline {
+	border-bottom: 2px solid blue;
+}
+
+hamburger {
+	display: none;
+}
+
+/* ----------------------------------------
+Landing Screen
+------------------------------------------- */
+
+.upright-triangle {
+	z-index: -10;
+	width: 0;
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 300px solid #00549986;
+	position: absolute;
+	margin-top:-25px;
+}
+
+.landing-container h1, .landing-container h2 {
+	position: relative;
+}
+
+/* ----------------------------------------
+About
+------------------------------------------- */
+.about-content-container img {
+	width: 30%;
+	/* position: center; */
+} 
+
+/* .about-text-container {
+	margin-left: 40px;
+} */
+
+.about-text-container h3 {
+	margin-top: 0px;
+}
+
+.about-text-container p, .about-text-container ul {
+	width: 100%;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+
+
+
+/* ----------------------------------------
+Projects
+------------------------------------------- */
+#carousel {
+	max-width: 70vw;
+}
+
+.project-text-container p {
+	padding-right: 40px;
+}
+
+.d-md-block h5, .d-md-block p {
+	margin: 0;
+	padding: 0;
+	color: chartreuse;
+	text-shadow: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------
+Forms
+------------------------------------------- */
+.form-content-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+input, textarea {
+	border: 2px solid #44545E;
+	margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group:last-of-type {
+	width: 100%;
+} 
+
+textarea {
+	width: 100%;
+} 
+
+form button {
+	width: 20%;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer p, footer a {
+	padding: 10px;
+	margin: 0;
+}
+
+
+/* ----------------------------------------
+
+Error Styles
+------------------------------------------- */
+
+.error {
+	border: solid #ED5254 2px;
+}
+
+.error-message {
+	color: #ED5254;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 0;
+	display: none;
+}
+
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */

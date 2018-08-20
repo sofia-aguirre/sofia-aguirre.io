@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <!-- set viewport to device width to allow responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS + Fonts-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Prompt|Quattrocento+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+        <title>Sofia Aguirre | Tech Dev</title>
+</head>
+
+<!-- Page Begin! -->
+<!-- PLEASE NOTE: I know it's div hell right now, will clean up before project is due -->
+<body>
+        <div class="landing-container">
+                <div class="upright-triangle"></div>
+                <div class="text-container">
+                        <h1>SOFIA AGUIRRE</h1>
+                        <h2>TECHNOLOGIES DEV</h2>
+                </div>
+        </div> 
+        <nav class="sticky">
+                <ul>
+                        <li><a href="#aboutSection" class="scroll_to">About</a></li>
+                        <li><a href="#projects" class="scroll_to">Projects</a></li>
+                        <li><a href="#testimonials" class="scroll_to">Testimonials</a></li>
+                        <li><a href="#contact" class="scroll_to">Contact</a></li>
+                </ul>
+        </nav>
+        <main>
+                <div class="about-container" id="aboutSection">
+                        <h2>ABOUT</h2>
+                        <div class="about-content-container">
+                                <img class="about-img" src="./images/about-me-placeholder.jpg" alt="A picture of me">
+                                <div class="about-text-container">
+                                        <h3>Sofia Aguirre</h3>
+                                                <p>Web Dev Student | Sound Engineer</p>
+                                                <p>I’m a full stack web developer with over ten years as a 
+                                                live sound engineer. My passion for audio has driven me to 
+                                                pursue and develop web/software/hardware technologies serving
+                                                the music and events industries both in studios and live productions.</p>
+                                                <ul class="skill-tree">
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>Java</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                </div>
+                <div class="projects-container" id="projects">
+                        <h2>PROJECTS</h2>
+                        <div class="projects-content-container">
+                                <div id="carousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                        <img id="1stcarou" class="d-block w-100" src="./images/monument-SH.png" alt="First slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                                <h5></h5>
+                                                                <p></p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <img class="d-block w-100" src="./images/wingull-SH.png" alt="Second slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                                <h5></h5>
+                                                                <p></p>
+                                                        </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                        <img class="d-block w-100" src="./images/giffaw-SH.png" alt="Third slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                                <h5></h5>
+                                                                <p></p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                        </a>
+                                                <!-- The Modal -->
+                                                <div id="myModal" class="modal">
+                                                        <span class="close">&times;</span>
+                                                        <img class="modal-content" id="img01">
+                                                        <div id="caption"></div>
+                                                </div>
+                                </div>
+                        </div>
+                        <div class="project-text-container">
+                                <p><a href="./images/monument-js-codesnip.png">Monument Codesnip</a> - <a href="https://github.com/sofia-aguirre/jquery-monument-landing-page-hw">Repo</a></p>
+                                <p><a href="./images/wingull-css-codesnip.png">Wingull Codensnip </a>- <a href="https://github.com/sofia-aguirre/js-racer-game-lab">Repo</a></p>
+                                <p><a href="./images/giffaw-js-codesnip.png">Giffaw Codesnip </a> - <a href="https://github.com/sofia-aguirre/giffaw">Repo</a></p>
+                        </div>
+                </div> 
+                <div class="testimonials-container" id="testimonials">
+                        <h2>TESTIMONIALS</h2>
+                        <div class="testimonials-content-container">
+                                        <div class="container">
+                                                <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                                                        <div class="carousel-inner" role="listbox">
+                                                        <div class="carousel-item active text-center p-4">
+                                                                <p>"I feel very fortunate to be able to work Sofia  because she is everything you could ever want in an incredible web developer. She is knowledgable, a creative problem solver, and a gifted communicator. Her natural curiosity is an asset to our team because her passion fuels her to learn and share new techniques/technologies. She perfectly balances active listening with providing valuable input while asking thought-provoking questions. Her insight helps us works more efficiently while her determination and drive help keep us motivated."</p>
+                                                                <p><em>- Andrea Piazza</em></p>
+                                                                <p><em>Software Dev + WDI Student @ GA</em></p>
+                                                        </div>
+                                                        <div class="carousel-item text-center p-4">
+                                                                <p>"Sofia is extremely confident, hard working, and dependable. Her great communication skills and professionalism makes her an absolute pleasure to work with. Overall she’s a great colleague to have!"</p>
+                                                                <p><em>- Raj Mahal</em></p>
+                                                                <p><em>WDI Student @ GA</em></p>
+                                                        </div>
+                                                        <div class="carousel-item text-center p-4">
+                                                                <p>""In the brief amount of time I've known her, Sofia has proven to be a knowledgeable programmer and a considerate friend. I have learned a lot from her as a teammate, and she is always willing to help sort through issues. It is a pleasure to work with her.</p>
+                                                                <p><em>- Alan Duncan</em></p>
+                                                                <p><em>WDI Student @ GA</em></p>
+                                                        </div>
+                                                        </div>
+                                                        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                        </a>
+                                                </div>
+                                        </div>
+                        </div>
+                </div> 
+                <div class="contact-container" id="contact">
+                        <h2>CONTACT</h2>
+                                <form class="form-content-container">
+                                        <div class="form-group name-input-container">
+                                                <input type="text" placeholder="Full Name" >
+                                                <p class="error-message">I'd like to know who's calling, please.</p>
+                                        </div>
+                                        <div class="form-group email-input-container">
+                                                <input type="email" placeholder="E-mail" >
+                                                <p class="error-message">But then how do I respond?!</p>
+                                        </div>
+                                        <div class="form-group subject-input-container">
+                                                <input type="text" placeholder="Subject" >
+                                                <p class="error-message">What are we going to talk about?.</p>
+                                        </div>
+                                        <div class="form-group textarea-container">
+                                                <textarea name="" id="" cols="30" rows="10" placeholder="Let's have a chat!"></textarea>
+                                                <p class="error-message">What do you waaaaaant from meeeee?</p>
+                                        </div>
+                                        <button type="submit">SUBMIT</button>
+                                </form>
+                        <h2 id="followtext">FOLLOW ME</h2>
+                                <div class="sm-content-container">
+                                        <p><a href="https://www.linkedin.com/in/sofiaxaguirre/">LinkedIn</a></p>
+                                        <p><a href="https://github.com/sofia-aguirre">Github</a></p>
+                                        <p><a href="https://codepen.io/sofia-aguirre/">Codepen</a></p>
+                                </div>
+                </div> 
+        </main>
+        <footer>
+                <p><a href="./index.html"> &copy; Sofia Aguirre, 2018</a></p>
+                <p><a href="./pages/credits.html">Acknowledgements</a></p>
+        </footer>
+</body>
+</html>
